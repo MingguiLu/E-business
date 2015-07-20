@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*top 顶部收藏、欢迎*/
+.top{
+	height:30px;
+	background:#F7F7F7;
+	border-bottom:1px solid #EEEEEE;
+}
+.top_content{
+	width:1000px;
+	height:30px;
+	margin:0 auto;
+	font-family:"宋体";
+}
+.top_favorite{
+	width:74px;
+	height:30px;
+	float:left;
+	line-height:30px;
+	background:url(../images/icon/top_icon.jpg) left center no-repeat;
+	padding-left:20px;
+	color:#656565;
+	font-weight:bold;
+}
+.top_welcome{
+	width:215px;
+	height:30px;
+	line-height:30px;
+	float:right;
+	margin-right:20px;
+}
+.top_welcome a:link, .top_welcome a:visited{
+	color:#656565;
+}
+.top_welcome a:hover, .top_welcome a:active{
+	color:#FF8800;
+}
+	
+/*logo logo、搜索栏、购物车*/
+.logo{
+	height:85px;
+	background:#1D7AD9;
+	}
+.logo_content{
+	width:1000px;
+	height:85px;
+	margin:0 auto;
+}
+.logo_img{
+	width:179px;
+	float:left;
+}
+.search{
+	width:430px;
+	height:35px;
+	float:left;
+	margin-top:25px;
+	margin-left:146px;
+}
+.text_area{
+	width:360px;
+	height:35px;
+	float:left;
+	background:#FFF;
+	border:0;
+}
+.search_btn{
+	width:70px;
+	height:35px;
+	float:left;
+	line-height:35px;
+	background:#FF8C00;
+	display:inline-block;
+	color:#FFF;
+	font-size:14px;
+	text-align:center;
+}
+.shopcar{
+	width:145px;
+	height:35px;
+	line-height:35px;
+	color:#FFF;
+	font-size:14px;
+	float:right;
+	background:#FF8C00;
+	margin-top:25px;
+	margin-right:60px;
+}
+.shopcar_content{
+	width:47px;
+	height:35px;
+	float:left;
+	background:url(../images/icon/shopcar.jpg) 10px center no-repeat;
+	padding-left:40px;
+	border-right:1px solid #E27A00;
+}
+.shopcar_num{
+	width:38px;
+	height:35px;
+	float:left;
+	background:url(../images/icon/shopcar_num.jpg) 32px center no-repeat;
+	padding-left:18px;
+	border-left:1px solid #FF9C01;
+	}
+
+/*nav 头部菜单*/
+.nav{
+	height:35px;
+	background:#1369C0;
+}
+.nav_content{
+	width:1000px;
+	height:35px;
+	margin:0 auto;
+}
+.nav_menu{
+	width:190px;
+	height:35px;
+	float:left;
+	margin-left:0;
+	padding-left:0;
+	background:url(../images/icon/nav.jpg) 148px center no-repeat;
+	position:relative;
+}
+.nav_menu h3{
+	height:35px;
+	line-height:35px;
+	color:#FFF;
+	font-size:16px;
+	padding-left:40px;
+}
+.nav_menu_show{
+	width:100%;
+	background:#4593FD;
+	position:absolute;
+	left:0;
+	top:35px;
+}
+.menu_item{
+	padding:13.1px 10px;
+	border-bottom:1px solid #3487F2;
+	border-top:1px solid #5AA1FE;
+}
+.menu_item dt{
+	height:20px;
+	background:url(../images/icon/menu_item.jpg) center right no-repeat;
+}
+.menu_item dt a{
+	line-height:20px;
+	font-size:14px;
+	color:#FFF;
+	margin-right:4px;
+}
+.abg{
+	width:48px;
+	height:20px;
+	line-height:20px;
+	background:url(../images/icon/menu_item_dt.png) left center no-repeat;
+	text-decoration:underline;
+	display:inline-block;
+	text-align:center;
+}
+.menu_item dd{
+	height:17px;
+}
+.menu_item dd a{
+	line-height:17px;
+	color:#C0D8F7;
+	font-family:"宋体";
+	margin-right:10px;
+}
+
+.nav_list{
+	width:570px;
+	height:35px;
+	float:left;
+}
+.nav_list li{
+	width:95px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	float:left;
+}
+.nav_list a:link, .nav_list a:visited{
+	color:#FFF;
+	font-size:14px;
+	dislplay:block;
+}
+.nav_list a:hover, .nav_list a:active{
+	color:#FFF;
+	font-size:14px;
+	display:block;
+	background:#4593FD;
+}
+
+/*banner 图片*/
+.banner{
+	width:1000px;
+	height:326px;
+	margin:0 auto;
+	overflow:hidden;
+	}
+.banner_img{
+	width:811px;
+	height:326px;
+	float:right;
+	position:relative;
+	}
+.banner_img ul{
+	width:1620px;
+	height:326px;
+	position:absolute;
+	left:0;
+	top:0;}
+}
+.banner_img li{
+	float:left;
+}
+.banner_img img{
+	width:811px;
+	height:326px;
+	dislplay:block;
+}
+.banner_click{
+	width:100%;
+	height:10px;
+	position:absolute;
+	left:0;
+	bottom:15px;
+	text-align:center;
+	z-index:2;
+}
+.banner_click a{
+	width:20px;
+	height:10px;
+	background-color:#FFF;
+	margin:0 5px;
+	dislplay:inline-block;
+	overflow:hidden;
+}
+	
+	
+/*footer 底部区域*/
+.footer{
+	background:#D4D4D4;
+	height:170px;
+	text-align:center;
+	padding-top:50px;
+}
+.footer p{
+	line-height:25px;
+
+}
+.footer ul{
+	width:612px;
+	height:46px;
+	margin:35px auto;
+}
+.footer li{
+	float:left;
+	margin:0 12.5px
+}
