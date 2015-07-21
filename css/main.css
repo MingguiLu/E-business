@@ -122,6 +122,7 @@
 	padding-left:0;
 	background:url(../images/icon/nav.jpg) 148px center no-repeat;
 	position:relative;
+	margin-left:-180px; /*通过设置position:relative和margin-left:-180px,让nav_menu左对齐*/
 }
 .nav_menu h3{
 	height:35px;
@@ -146,10 +147,16 @@
 	height:20px;
 	background:url(../images/icon/menu_item.jpg) center right no-repeat;
 }
-.menu_item dt a{
+.menu_item dt a:link, .menu_item dt a:visited{
 	line-height:20px;
 	font-size:14px;
 	color:#FFF;
+	margin-right:4px;
+}
+.menu_item dt a:hover, .menu_item dt a:active{
+	line-height:20px;
+	font-size:14px;
+	color:#FF8C00;
 	margin-right:4px;
 }
 .abg{
@@ -164,9 +171,15 @@
 .menu_item dd{
 	height:17px;
 }
-.menu_item dd a{
+.menu_item dd a:link, .menu_item dd a:visited{
 	line-height:17px;
 	color:#C0D8F7;
+	font-family:"宋体";
+	margin-right:10px;
+}
+.menu_item dd a:hover, .menu_item dd a:active{
+	line-height:17px;
+	color:#FF8C00;
 	font-family:"宋体";
 	margin-right:10px;
 }
@@ -195,25 +208,30 @@
 	background:#4593FD;
 }
 
+
+.main{
+	width:1000px;
+	height:auto;
+	margin:0 auto;
+	background:#FFF;
+}
 /*banner 图片*/
 .banner{
-	width:1000px;
 	height:326px;
-	margin:0 auto;
 	overflow:hidden;
-	}
+}
 .banner_img{
 	width:811px;
 	height:326px;
 	float:right;
 	position:relative;
-	}
+}
 .banner_img ul{
 	width:1620px;
 	height:326px;
 	position:absolute;
 	left:0;
-	top:0;}
+	top:0;
 }
 .banner_img li{
 	float:left;
@@ -225,32 +243,152 @@
 }
 .banner_click{
 	width:100%;
-	height:10px;
+	height:5px;
 	position:absolute;
 	left:0;
 	bottom:15px;
 	text-align:center;
-	z-index:2;
 }
 .banner_click a{
-	width:20px;
-	height:10px;
 	background-color:#FFF;
 	margin:0 5px;
-	dislplay:inline-block;
+	padding:2.5px 10px;  /*通过同时设置display:inline-block和padding给a标签设置宽度和高度，让a标签呈现为块状*/
+	display:inline-block;
 	overflow:hidden;
 }
-	
-	
+
+/*market 商品展示区域*/
+.market{
+	height:475px;
+	margin-bottom:15px;
+}
+.market_title{
+	width:942px;
+	height:75px;
+	background:url(../images/icon/market01.jpg) left center no-repeat;
+	padding-left:58px;
+	position:relative;
+}
+.market_title h1{
+	width:100px;
+	height:55px;
+	color:#000;
+	font-size:24px;
+	padding-top:20px;
+}
+.market_title span{
+	dislplay:inline-block;
+	position:absolute;
+	right:22px;
+	bottom:15px;
+}
+.market_title a:link, .market_title a:visited{
+	color:#000;
+	font-family:"新宋体";
+}
+.market_title a:hover, .market_title a:active{
+	color:#FF8C00;
+	font-family:"新宋体";
+}
+.market_banner{	
+	width:190px;
+	height:400px;
+	float:left;
+}
+.market_showup{
+	width:810px;
+	height:280px;
+	float:right;
+}
+.market_showup_item{
+	width:201px;
+	height:280px;
+	float:left;
+	border-top:1px solid #E5E5E5;
+	border-bottom:1px solid #E5E5E5;
+	border-right:1px solid #E5E5E5;
+}
+.market_showup_item img{
+	width:133px;
+	height:151px;
+	margin:45px auto 0 auto;
+	display:block;
+}
+.market_showup_item p{
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	margin:24px auto;
+}
+.market_showup_item span{
+	color:#FF7300;
+	font-size:14px;
+	font-weight:bold;
+}
+.market_showup a:link, .market_showup a:visited{
+	color:#000;
+}
+.market_showup a:hover, .market_showup a:active{
+	color:#FF8C00;
+}
+.market_showdown{
+	width:810px;
+	height:117px;
+	float:right;
+	border-bottom:3px solid #FF7201;
+}
+.market_showdown_item{
+	width:201px;
+	height:116px;
+	float:left;
+	border-right:1px solid #E5E5E5;
+}
+.market_showdown_item img{
+	display:block;
+	float:left;
+	margin:30px 10px;
+}	
+.market_showdown_item p{
+	height:16px;
+	line-height:16px;
+	color:#000;
+	font-family:"新宋体";
+	text-align:center;
+	margin:30px 10px 10px auto;
+}
+.market_showdown_item p i{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	background:url(../images/icon/money.jpg) left center no-repeat;
+}
+.market_showdown_item span{
+	display:inline-block;
+	margin-top:10px;
+	height:16px;
+	font-size:16px;
+}
+.market_showdown a:link, .market_showdown a:visited{
+	color:#000;
+}
+.market_showdown a:hover, .market_showdown a:active{
+	color:#FF8C00;
+}
+
+
 /*footer 底部区域*/
 .footer{
 	background:#D4D4D4;
-	height:170px;
+	height:200px;
 	text-align:center;
-	padding-top:50px;
+	padding-top:30px;
+	clear:both;
 }
 .footer p{
 	line-height:25px;
+	margin-top:30px;
+	maring-right:35px;
 
 }
 .footer ul{
