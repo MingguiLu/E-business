@@ -57,6 +57,7 @@
 	float:left;
 	margin-top:25px;
 	margin-left:146px;
+	overflow:hidden;
 }
 .text_area{
 	width:360px;
@@ -268,6 +269,7 @@
 	background:url(../images/icon/market01.jpg) left center no-repeat;
 	padding-left:58px;
 	position:relative;
+	overflow:hidden;
 }
 .market_title h1{
 	width:100px;
@@ -399,4 +401,5 @@
 .footer li{
 	float:left;
 	margin:0 12.5px
+	dislplay:inline;
 }
